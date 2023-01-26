@@ -62,10 +62,10 @@ Crumbl is [red bold]closed on Sundays[/red bold], but come back tomorrow to find
 
     print("[yellow]Here are this week's flavors:[/yellow]\n")
 
-    colors = ["red", "blue", "yellow", "cyan", "magenta", "green"]
+    colors = ["red", "blue", "yellow", "cyan", "magenta", "green", "white"]
 
     for flavor in flavors[0].contents:
-        random_color = colors.pop(random.randint(0, len(colors) - 1))
+        random_color = colors.pop(random.randint(0, len(colors)-1))
         flavor_name = flavor.select("div>h3")
         print(
             f"[blue] - [/blue][{random_color}]"
